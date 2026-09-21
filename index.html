@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&family=Zen+Maru+Gothic&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Study Manager</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="app-icon">SM</div>
+      <p>Study Manager</p>
+      <div class="header time"></div>
+    </div>
+
+    <div class="main">
+      <div class="copy-container">
+        <h1>Study Manager</h1>
+        <h3>勉強時間を管理しよう！</h3>
+      </div>
+
+      <div class="contents-item">
+        <div class="card_one">
+          <h3>MENU</h3>
+
+          <button onclick="showPage('study')">学習記録</button>
+          <button onclick="showPage('goal')">目標設定</button>
+          <button onclick="showPage('point')">ポイント</button>
+          <button onclick="showPage('advice')">今日のひとこと</button>
+          <button onclick="showPage('calendar')">カレンダー</button>
+          <button onclick="showPage('setting')">設定</button>
+        </div>
+
+        <div class="card_two">
+          <h3>TIMER</h3>
+          <div class="comment">今日は何を勉強しよう？</div>
+          <button subject="japanese" class="subject_button">国語</button>
+          <button subject="math" class="subject_button">数学</button>
+          <button subject="social_studies" class="subject_button">社会</button>
+          <button subject="science" class="subject_button">理科</button>
+          <button subject="English" class="subject_button">英語</button>
+
+          <div class="line">
+            <div>勉強開始</div>
+            <div id="selected_subject"></div>
+          </div>
+
+          <div id="timer">00:00:00</div>
+
+          <button id="start" class="timer_button">スタート</button>
+          <button id="stop" class="timer_button">ストップ</button>
+          <button id="reset" class="timer_button">リセット</button>
+        </div>
+        <div class="card_three">
+          <h3>DATA</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-logo"></div>
+      <div class="footer-list">
+        <p></p>
+        <p></p>
+        <p></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

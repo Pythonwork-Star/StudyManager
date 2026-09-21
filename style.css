@@ -1,0 +1,255 @@
+head {
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f8f0ff 0%, #dec4f7 100%);
+}
+
+.header {
+  background-color: rgb(5, 5, 5);
+  height: 70px;
+  width: 100%;
+  color: #bbbaba;
+  box-shadow: 0 2px 60px rgba(0, 0, 0, 0.5);
+  border: none;
+  margin: 0;
+
+  display: flex;
+  align-items: center;
+
+  white-space: nowrap;
+}
+
+.app-icon {
+  width: 52px;
+  height: 52px;
+
+  border: none;
+  border-radius: 50%;
+
+  color: #d2c7e8;
+  font-size: 27px;
+  font-weight: 900;
+  font-family: "Zen Maru Gothic", sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: radial-gradient(
+    circle at 35% 25%,
+    rgba(190, 170, 235, 0.25) 0%,
+    rgba(80, 60, 120, 0.18) 35%,
+    rgba(13, 13, 14, 0.9) 75%
+  );
+
+  box-sizing: border-box;
+  margin-left: 25px;
+  flex-shrink: 0;
+
+  box-shadow:
+    inset 3px 3px 7px rgba(210, 195, 240, 0.18),
+    inset -3px -3px 8px rgba(0, 0, 0, 0.5),
+    0 0 5px rgba(170, 145, 220, 0.18),
+    0 0 14px rgba(150, 120, 210, 0.1);
+
+  letter-spacing: -2px;
+
+  text-shadow: 0 0 4px rgba(210, 195, 240, 0.5);
+}
+
+.header p {
+  padding: 12px 40px;
+  font-family: "Rubik Spray Paint", system-ui;
+  font-size: 45px;
+  margin: 0;
+}
+
+.header time {
+  padding: 12px 40px;
+  font-family: "Rubik Spray Paint", system-ui;
+  font-size: 25px;
+  margin: 0;
+}
+
+.main {
+  margin: 0;
+  background-color: transparent;
+}
+
+.main h1 {
+  text-align: center;
+  font-family: "Rubik Spray Paint", system-ui;
+  font-size: 120px;
+  font-weight: 100;
+  margin-bottom: 5px;
+}
+
+.main h3 {
+  text-align: center;
+  margin-top: 0;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-size: 40px;
+}
+
+.contents-item {
+}
+
+.card_one {
+  height: 700px;
+  width: 300px;
+  margin-left: 20px;
+  margin-top: 200px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: black;
+  color: aliceblue;
+  border-radius: 15px;
+  font-size: 40px;
+  display: flexbox;
+  font-family: "Zen Maru Gothic", sans-serif;
+  float: left;
+}
+
+.card_one button {
+  font-size: 37px;
+  font-family: "Zen Maru Gothic", sans-serif;
+  margin: 17px 5px;
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+}
+
+.card_two {
+  height: 900px;
+  width: 600px;
+  margin-left: 15px;
+  margin-top: 200px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: black;
+  color: aliceblue;
+  border-radius: 15px;
+  font-size: 40px;
+  float: left;
+  display: flexbox;
+  font-family: "Zen Maru Gothic", sans-serif;
+}
+
+.comment {
+  text-align: center;
+}
+
+#timer {
+  text-align: center;
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.subject_button {
+  font-size: 42px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-bottom: 40px;
+  border-radius: 15px;
+  font-family: "Zen Maru Gothic", sans-serif;
+  border: none;
+}
+
+.subject_button:active {
+  transform: translateY(2px);
+  filter: brightness(0.8);
+}
+
+.subject_button[subject="japanese"] {
+  background-color: #ffb3c1;
+  box-shadow: 0 2px 60px rgba(247, 212, 212, 0.5);
+}
+
+
+
+.subject_button[subject="math"] {
+  background-color: #a8d8ff;
+  box-shadow: 0 2px 60px rgba(219, 245, 253, 0.5);
+}
+
+
+
+.subject_button[subject="social_studies"] {
+  background-color: #b8e6b8;
+  box-shadow: 0 2px 60px rgba(162, 236, 174, 0.5);
+}
+
+.subject_button[subject="science"] {
+  background-color: #ffd59a;
+  box-shadow: 0 2px 60px rgba(245, 210, 164, 0.5);
+  margin-left: 120px;
+}
+
+.subject_button[subject="English"] {
+  background-color: #d5b5ff;
+  box-shadow: 0 2px 60px rgba(234, 171, 247, 0.5);
+}
+
+.line {
+  border: 3px solid white;
+  border-radius: 15px;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  margin: 30px 30px 20px 30px;
+
+
+}
+
+#selected_subject {
+  margin:10px;
+  font-size: 75px;
+}
+
+.timer_button {
+  padding: 10px 40px;
+  margin-left: 12px;
+  color: white;
+  background-color: #9b9399;
+  border: border: 5px solid transparent;
+  border-radius: 15px;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-size: 23px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.timer_button:hover {
+  background-color: #c7c2c7;
+}
+
+.timer_button:active {
+  background-color: #777077;
+  border: 3px solid white;
+}
+
+.card_three {
+  height: 700px;
+  width: 350px;
+  margin-left: 15px;
+  margin-top: 200px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  background-color: black;
+  color: aliceblue;
+  border-radius: 15px;
+  font-size: 40px;
+  float: left;
+  display: flexbox;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-size: 40px;
+}
+
+footer {
+}
